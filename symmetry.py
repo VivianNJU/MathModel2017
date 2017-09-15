@@ -56,7 +56,10 @@ for i in np.arange(25, 100):
 for i in np.arange(100, col2):
     xxx.append(1+find_max(sheet2.col_values(i),False))
 
-plt.scatter(np.arange(1,col2+1),xxx)
+# fo = open("data/对称轴们.txt", "w")
+# fo.write(str(xxx))
+
+# plt.scatter(np.arange(1,col2+1),xxx)
 # plt.savefig('img/symmetry.png')
 # plt.show()
 
