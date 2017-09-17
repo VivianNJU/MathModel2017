@@ -11,15 +11,11 @@ def find_4_point(array):
     for x in array:
         if zero_flag :
             if x != 0:
-                result.append(i)
-                result.append(x)
-                result.append('')
+                result.append(i-0.5)
                 zero_flag = not zero_flag
         else:
             if x == 0:
-                result.append(i)
-                result.append(array[i-2])
-                result.append('')
+                result.append(i+0.5)
                 zero_flag = not zero_flag
         i+=1
     return result
