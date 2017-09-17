@@ -6,20 +6,15 @@ import matplotlib.pyplot as plt
 row1 = 256
 col2 = 180
 
-xxx = []    # 每一行的和，一共256行
-yyy = []    # 每一列的和，一共256列
-
-workbook = xlrd.open_workbook('a_problem.xls')
-sheet2 = workbook.sheet_by_name('2')
-
-xxx = np.arange(1, 513)
+workbook = xlrd.open_workbook('A题附件.xls')
+sheet2 = workbook.sheet_by_name('附件2')
 
 i = 0
 while i<col2:
-    plt.scatter(xxx, sheet2.col_values(i))
+    plt.scatter(np.arange(1, 513), sheet2.col_values(i))
     i += 1
     title = "img/"+str(i)+".png"
-    # plt.savefig(title)
+    plt.savefig(title)
     plt.close()
 
 

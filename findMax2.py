@@ -14,7 +14,6 @@ def find_max(array, is_value):
         if item > max_value:
             max_value = item
             max_index = i
-
         i += 1
 
     if is_value:
